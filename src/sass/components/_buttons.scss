@@ -1,0 +1,61 @@
+/**
+ * A simple, design-free button object. Extend this object with a `.btn--*` skin
+ * class.
+ */
+.btn {
+  display: inline-block;
+  padding: em(5, 10);
+  font-size: em(20);
+  font-weight: 600;
+  vertical-align: middle;
+  @include transition(all .3s);
+
+  &:hover{
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+/**
+ * Positive buttons’ skin. Extends `.btn`.
+ */
+.btn--positive {
+  border: 3px solid $btn-border;
+  background-color: $btn-positive-bg;
+  color: $btn-positive-color;
+
+  &:hover,
+  &:active{
+    background-color: $btn-negative-bg;
+    color: $btn-negative-color;
+  }
+}
+
+/**
+ * Negative buttons’ skin. Extends `.btn`.
+ */
+.btn--negative {
+  border: 3px solid $btn-border;
+  background-color: $btn-negative-bg;
+  color: $btn-negative-color;
+
+  &:hover,
+  &:active{
+    background-color: $btn-positive-bg;
+    color: $btn-positive-color;
+  }
+}
+
+a,
+a:hover,
+a:active{
+  color: $btn-negative-bg;
+}
+
+a{
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}

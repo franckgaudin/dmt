@@ -1,0 +1,48 @@
+@mixin button-with-icon {
+  padding: 0;
+  font-size: em(13);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 32px;
+  letter-spacing: 0.15em;
+  color: $menu-color;
+  border: 0;
+  background: none;
+
+  [class^="icon-"],
+  [class*=" icon-"]{
+    vertical-align: bottom;
+  }
+}
+
+@mixin large-screen-view{
+  @include breakpoint(large){
+    max-width: $large;
+    margin: 0 auto
+  }
+}
+
+// Breakpoint
+
+$small:   320px;
+$medium:  768px;
+$large:   1024px;
+$xlarge:  1440px;
+
+@mixin breakpoint($point) 		{
+  @if $point == xlarge {
+    @media (min-width: $xlarge) { @content; }
+  }
+  @if $point == large {
+    @media (min-width: $large) { @content; }
+  }
+  @if $point == medium {
+    @media (min-width: $medium) { @content; }
+  }
+  @else if $point == retina {
+    @media (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: $small) { @content; }
+  }
+}

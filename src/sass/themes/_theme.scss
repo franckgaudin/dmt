@@ -1,0 +1,61 @@
+body{
+  position: relative;
+  color: $body-color;
+  font-family: $sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  background-color: $body-bg;
+  left: 0;
+  @include transition(all .3s ease);
+
+  &.push{
+    left: $menu-width;
+    overflow-x: hidden;
+  }
+
+  &.no-scroll{
+    overflow: hidden;
+  }
+}
+
+*:focus{
+  outline: none;
+}
+
+.center{
+  text-align: center;
+}
+
+.serif{
+  font-family: $serif;
+}
+
+.information{
+  display: block;
+  font-size: em(14);
+  padding: 0.35em 0;
+}
+
+.hidden{
+  display: none;
+  visibility: hidden;
+}
+
+.overlay{
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: transparent;
+  z-index: $low-level;
+  @include transition(all .3s ease);
+
+  &.show{
+    opacity: 1;
+    z-index: $hi-level;
+    background: $body-overlay;
+  }
+}
+

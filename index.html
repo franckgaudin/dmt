@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DMT Design Meets Tech</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- Page styles -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Old+Standard+TT:400,700' rel='stylesheet' type='text/css'>
+    <!--<link rel="stylesheet" href="css/dmt.styles.css">-->
+
+    <!-- Page script -->
+    <script src="js/loadCSS.min.js"></script>
+    <script>
+        loadCSS("css/dmt.styles.min.css");
+    </script>
+    <noscript><link href="css/dmt.styles.min.css" rel="stylesheet"></noscript>
+
+</head>
+<body>
+    <header>
+        <div class="branding">
+            DMT
+            <span>
+                Design Meets Tech
+            </span>
+        </div>
+        <nav class="navbar">
+            <div id="menu" class="menu">
+                <button id="menu--buttonShow" class="menu--buttonShow">
+                    <i class="icon icon--menu"></i>
+                    Menu
+                </button>
+                <ul id="menu--items" class="menu--items">
+                    <li class="menu--item">
+                        <a href="#">
+                            Shop
+                        </a>
+                    </li>
+                    <li class="menu--item">
+                        <a href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="menu--item">
+                        <a href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search" id="search">
+                <button id="search--buttonShow" class="search--buttonShow">
+                    <i class="icon icon--search" id="search--buttonShow"></i>
+                    Search
+                </button>
+                <form class="search--form" id="search--form" action="#">
+                    <input class="search--input" id="search--input" type="search" name="s" placeholder="Search...">
+                    <input class="search--button" type="hidden" value="submit">
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container home">
+            <div class="container__inner">
+                <span class="label">Home</span>
+                <h1>Buster Bulb</h1>
+                <p>The first designer LED bulb, finished in gold glass.</p>
+                <a class="btn btn--positive" href="#">Read more</a>
+            </div>
+        </div>
+
+        <div class="container accessories">
+            <div class="container__inner">
+                <span class="label">Accessories</span>
+                <h2>Peak</h2>
+                <p>A playful pouch with a trick up its sleeve</p>
+                <a class="btn btn--positive" href="#">Read more</a>
+            </div>
+        </div>
+
+        <div class="container camerasReview">
+            <div class="container__inner">
+                <span class="label">Cameras</span>
+                <h2>Leica M</h2>
+                <a class="btn btn--negative" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="container soundReview">
+            <div class="container__inner">
+                <span class="label">Sound</span>
+                <h2>Trobla Amplifier</h2>
+                <a class="btn btn--negative" href="#">Review</a>
+            </div>
+        </div>
+
+        <div class="container cameras">
+            <div class="container__inner">
+                <span class="label">Cameras</span>
+                <h2>Leica D-Lux</h2>
+                <p>Limited-edition Diesel collaboration</p>
+                <a class="btn btn--positive" href="#">Read more</a>
+            </div>
+        </div>
+
+        <div class="container newsletter center serif">
+            <div class="container__inner">
+                <h2>Good Things</h2>
+                <p>come to those who sign up for our newsletter.</p>
+                <form action="#">
+                    <input type="email" name="e" placeholder="Your email">
+                    <input type="button" value="subscribe">
+                </form>
+                <span class="information">We respect your privacy and we won't share your information.</span>
+            </div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            Copyright DMT
+        </div>
+        <ul class="social">
+            <li>
+                <a href="#">
+                    <i class="icon icon--facebook"></i>
+                    <span class="hidden">
+                        Facebook
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon icon--twitter"></i>
+                    <span class="hidden">
+                        Twitter
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+
+<!-- build:js(app/) ../../scripts/main.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.min.js"></script>
+<!-- endbuild -->
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+
+<!-- Built with love using Web Starter Kit -->
+</body>
+</html>

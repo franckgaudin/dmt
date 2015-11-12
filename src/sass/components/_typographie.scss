@@ -1,0 +1,45 @@
+h1, h2, h3, h4{
+  line-height: 1em;
+  margin-top: 0.25em;
+  margin-bottom: 0.35em;
+}
+
+h1{
+  font-size: em(72);
+  font-weight: 800;
+}
+h2{
+  font-size: em(48);
+  font-weight: 800;
+}
+h3{
+  font-size: em(36);
+  font-weight: 600;
+}
+h4{
+  font-size: em(32);
+  font-weight: 300;
+}
+p{
+  font-size: em(18);
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+.label{
+  font-size: em(13);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+.copyright{
+  font-size: em(14);
+  font-weight: 400;
+  opacity: .4;
+}
+
+@include breakpoint(large){
+  p{
+    font-size: em(21);
+    font-weight: 300;
+  }
+}

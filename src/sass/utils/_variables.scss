@@ -1,0 +1,45 @@
+/* Colors */
+$body-bg:                   #3e3b4a;
+$body-color:                #fff;
+$body-overlay:              rgba(62, 59, 74, 0.9);
+
+$label-color:               #ffc7b0;
+
+$menu-color:                #898691;
+
+$btn-positive-bg:           transparent;
+$btn-negative-bg:           #ffe18f;
+$btn-positive-color:        #fff;
+$btn-negative-color:        #3e3b4a;
+$btn-border:                #ffe18f;
+
+$article-accessories-bg:    #71b6c3;
+$article-cameras-bg:        #1ab467;
+$newsletter-bg:             #eb7b61;
+
+$form-btn:                  #66689c;
+
+/* Background images */
+$article-home-desktop-visual:   '../images/visuals/home-big.png';
+$article-home-medium-visual:    '../images/visuals/home-medium.png';
+$article-home-small-visual:     '../images/visuals/home-small.png';
+$article-accessories-visual:    '../images/visuals/accessories.png';
+$article-cameras-visual:        '../images/visuals/cameras.png';
+$article-camerasReview-visual:  '../images/visuals/cameras-review.png';
+$article-soundReview-visual:    '../images/visuals/sound-review.png';
+
+
+
+/* Font family */
+$sans-serif:                'Open Sans', sans-serif;
+$serif:                     'Old Standard TT', serif;
+
+/* Elements size */
+$menu-width:                240px;
+
+/* Z-index */
+$level-0:                   1;
+$level-1:                   10;
+$level-2:                   20;
+$hi-level:                  100;
+$low-level:                 -1;

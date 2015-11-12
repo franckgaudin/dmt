@@ -1,0 +1,21 @@
+/**
+ * A simple, design-free icon object. Extend this object with a `.icon--*` skin
+ * class.
+ */
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-top: 1px;
+  line-height: 32px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.icon--facebook{ background-image: url("../images/icons/icon-facebook.png"); }
+.icon--twitter{ background-image: url("../images/icons/icon-twitter.png"); }
+.icon--menu{ background-image: url("../images/icons/icon-menu.png"); }
+.icon--search{ background-image: url("../images/icons/icon-search.png"); }

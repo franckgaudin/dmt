@@ -1,0 +1,36 @@
+.menu{
+  float: left;
+
+  .menu--buttonShow{
+    @include button-with-icon;
+  }
+
+  .menu--items{
+    position: fixed;
+    width: $menu-width;
+    height: 100%;
+    padding: 20px;
+    top: 0;
+    left: -$menu-width;
+    z-index: $hi-level;
+    background: $btn-negative-bg;
+    box-sizing: border-box;
+    @include transition(all .3s ease);
+
+    &.menu--open{
+      left: 0;
+    }
+  }
+
+  .menu--item{
+    display: block;
+
+    a{
+      font-size: em(32);
+      font-weight: 600;
+      line-height: 2em;
+      color: $btn-negative-color;
+    }
+  }
+
+}

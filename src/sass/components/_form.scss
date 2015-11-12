@@ -1,0 +1,40 @@
+input{
+  margin-bottom: 1em;
+  padding: 0.75em 0.5em;
+  box-sizing: border-box;
+  font-size: em(16);
+}
+
+input[type="email"]{
+  display: block;
+  width: 100%;
+
+  color: $body-color;
+  text-align: center;
+  border: 5px solid $body-color;
+  background: transparent;
+  opacity: 0.8;
+}
+
+input[type="button"]{
+  display: block;
+  width: 100%;
+  color: $body-color;
+  border: 0;
+  background: $form-btn;
+}
+
+::-webkit-input-placeholder {
+  color: $body-color;
+}
+:-moz-placeholder {
+  color: $body-color;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: $body-color;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: $body-color;
+}
