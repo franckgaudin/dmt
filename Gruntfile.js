@@ -56,13 +56,13 @@ module.exports = function(grunt){
       }
     },
 
-    imagemin: {                          // Task 
-      dist: {                            // Another target 
+    imagemin: {
+      dist: {
         files: [{
-          expand: true,                  // Enable dynamic expansion 
-          cwd: 'src/',                   // Src matches are relative to this path 
-          src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match 
-          dest: ''                // Destination path prefix
+          expand: true,
+          cwd: 'src/images/',
+          src: ['**/*.{png,jpg,gif}'] ,
+          dest: 'images/'
         }]
       }
     },
@@ -82,8 +82,8 @@ module.exports = function(grunt){
             width: 1200
           }],
         },
-        src: 'index.html',
-        dest: 'result.html',
+        src: 'page-index.html',
+        dest: 'index.html',
         ignore: ['@font-face',/url\(/]
       }
     },
@@ -113,6 +113,6 @@ module.exports = function(grunt){
   // this default task will go through all configuration (dev and production) in each task 
   grunt.registerTask('default', ['jshint', 'uglify', 'cssmin', 'sass', 'imagemin']);
 
-  grunt.registerTask('build', ['critical', 'cssmin', 'imagemin']);
+  grunt.registerTask('build', ['uglify', 'critical', 'cssmin', 'imagemin']);
 
 };
