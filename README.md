@@ -8,7 +8,7 @@ Flexbox and Critical CSS
 
 # Installation
 
-1. Install [Node.js][11]
+1. Install [Node.js][6]
 2. Install [Grunt][3]
 ```sh
 sudo npm install -g grunt-cli -g bower
@@ -27,3 +27,4 @@ sudo npm install
 [3]:http://gruntjs.com
 [4]:https://www.npmjs.com
 [5]:http:https://nodejs.org/download/
+[6]:https://nodejs.org/en/
