@@ -70,7 +70,7 @@ module.exports = function(grunt){
     critical: {
       dist: {
         options: {
-          base: './',
+          base: '.',
           css: [
             'css/dmt.styles.min.css'
           ],
