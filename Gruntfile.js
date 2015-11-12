@@ -75,12 +75,9 @@ module.exports = function(grunt){
             'css/dmt.styles.min.css'
           ],
           dimensions: [{
-            height: 200,
-            width: 500
-          }, {
             height: 900,
             width: 1200
-          }],
+          }]
         },
         src: 'page-index.html',
         dest: 'index.html',
