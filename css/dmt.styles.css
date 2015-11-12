@@ -167,6 +167,8 @@ input[type="button"] {
 
 .menu {
   float: left; }
+.menu:hover {
+  cursor: pointer; }
 .menu .menu--buttonShow {
   padding: 0;
   font-size: 0.8125em;
@@ -201,6 +203,8 @@ input[type="button"] {
   font-weight: 600;
   line-height: 2em;
   color: #3e3b4a; }
+.menu .menu--item:hover {
+  cursor: pointer; }
 
 .search {
   float: right; }

@@ -1,6 +1,10 @@
 .menu{
   float: left;
 
+  &:hover{
+    cursor: pointer;
+  }
+
   .menu--buttonShow{
     @include button-with-icon;
   }
@@ -30,6 +34,9 @@
       font-weight: 600;
       line-height: 2em;
       color: $btn-negative-color;
+    }
+    &:hover{
+      cursor: pointer;
     }
   }
 
